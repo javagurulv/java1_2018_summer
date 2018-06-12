@@ -2,7 +2,7 @@ package lesson2;
 
 import java.util.Scanner;
 
-public class AddTwoNumbersExcellentCodeExample {
+public class FindMaxNumberExcellentCodeExample {
 
     public static void main(String[] args) {
         int firstNumber = getNumberFromUser();
