@@ -2,7 +2,14 @@ package lesson2;
 
 import java.util.Scanner;
 
-public class Experement {
+public class AddTwoNumbersExcellentCodeExample {
+
+    public static void main(String[] args) {
+        int firstNumber = getNumberFromUser();
+        int secondNumber = getNumberFromUser();
+        int maxNumber = findMaxNumber(firstNumber, secondNumber);
+        printMaxNumberToConsole(maxNumber);
+    }
 
     public static int getNumberFromUser() {
         Scanner sc = new Scanner(System.in);
@@ -20,13 +27,6 @@ public class Experement {
 
     public static void printMaxNumberToConsole(int maxNumber) {
         System.out.println("Greatest number = " + maxNumber);
-    }
-
-    public static void main(String[] args) {
-        int firstNumber = getNumberFromUser();
-        int secondNumber = getNumberFromUser();
-        int maxNumber = findMaxNumber(firstNumber, secondNumber);
-        printMaxNumberToConsole(maxNumber);
     }
 
 }
