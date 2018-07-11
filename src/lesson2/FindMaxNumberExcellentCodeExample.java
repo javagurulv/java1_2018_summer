@@ -25,6 +25,16 @@ public class FindMaxNumberExcellentCodeExample {
         }
     }
 
+    public static void findMaxNumberFailedVersion(int firstNumber,
+                                                 int secondNumber) {
+        if (firstNumber > secondNumber) {
+            System.out.println(firstNumber);
+        } else {
+            System.out.println(secondNumber);
+        }
+    }
+
+
     public static void printMaxNumberToConsole(int maxNumber) {
         System.out.println("Greatest number = " + maxNumber);
     }
