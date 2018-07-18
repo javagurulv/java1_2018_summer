@@ -1,11 +1,11 @@
 package lesson7;
 
-public class Bottle {
+public class BottleOfWater {
 
     private boolean isOpen;
     private boolean isFull;
 
-    public Bottle() {
+    public BottleOfWater() {
         isOpen = true;
         isFull = false;
     }
