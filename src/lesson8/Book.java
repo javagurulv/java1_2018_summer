@@ -13,7 +13,7 @@ public class Book {
     }
 
     public void open() {
-        if (!isOpen) {
+        if (!this.isOpen) {
             this.isOpen = true;
             this.currentPage = 1;
         }
