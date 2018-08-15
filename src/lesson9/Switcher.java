@@ -10,9 +10,11 @@ public class Switcher {
         this.bulb = null;
     }
 
-    public void connectLightBulb(LigthBulb bulb){
-        if (this.state == SwitcherState.OFF
-                && this.bulb == null) {
+    public void connectLightBulb(LigthBulb bulb) throws BulbAlreadyConnectedException {
+        if (this.bulb != null) {
+            throw new BulbAlreadyConnectedException(this.bulb);
+        }
+        if (this.state == SwitcherState.OFF) {
             this.bulb = bulb;
         }
     }
